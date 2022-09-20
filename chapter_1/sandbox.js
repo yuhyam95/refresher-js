@@ -12,6 +12,20 @@ console.log(fullName[-1])
 // let result = email.indexOf('a');
 // let result = email.lastIndexOf('a');
 // let result = email.slice(0, 10)
-let result = email.substr(1, 50)
+// let result = email.substr(1, 5)
 
-console.log(result)
+
+//Order of mathematical operations BIDMAs
+
+// Array methods
+
+let ninjas = ['Yusuf', 'Aisha', 30];
+//let result = ninjas.join(',')
+
+//Type conversion
+
+let random = 100;
+let result = String(random);
+
+
+console.log(result, typeof result);
