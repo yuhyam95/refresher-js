@@ -50,6 +50,30 @@ const ninjas = ['Yusuf', 'Aisha', 'Elioenai'];
 
 // console.log('Loop finished');
 
+//Variable and block scope
+
+//Params and Args
+
+const greet = function(name="Yusuf", time="Morning") {
+    
+    console.log(`Good ${time} ${name}`)
+};
+
+greet();
+greet('Aisha')
+greet('Aisha', 'Night')
+
+//Orders of params and args must align
+
+
+
+
+
+
+
+
+
+
 
 
 
