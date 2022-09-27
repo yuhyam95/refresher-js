@@ -64,8 +64,13 @@ greet('Aisha')
 greet('Aisha', 'Night')
 
 //Orders of params and args must align
+//Arrow functions
 
+const calcArea = (radius) => 3.14 * radius **2;
 
+const a = calcArea(5);
+
+console.log(a)
 
 
 
