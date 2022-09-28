@@ -33,7 +33,7 @@
 // Control Flow
 // For loop
 
-const ninjas = ['Yusuf', 'Aisha', 'Elioenai'];
+// const ninjas = ['Yusuf', 'Aisha', 'Elioenai'];
 
 // For loop
 // for (let i = 0; i < ninjas.length; i++) {
@@ -54,32 +54,54 @@ const ninjas = ['Yusuf', 'Aisha', 'Elioenai'];
 
 //Params and Args
 
-const greet = function(name="Yusuf", time="Morning") {
+// const greet = function(name="Yusuf", time="Morning") {
     
-    console.log(`Good ${time} ${name}`)
-};
+//     console.log(`Good ${time} ${name}`)
+// };
 
-greet();
-greet('Aisha')
-greet('Aisha', 'Night')
+// greet();
+// greet('Aisha')
+// greet('Aisha', 'Night')
 
 //Orders of params and args must align
 //Arrow functions
 
-const calcArea = (radius) => 3.14 * radius **2;
+// const calcArea = (radius) => 3.14 * radius **2;
 
-const a = calcArea(5);
+// const a = calcArea(5);
 
-console.log(a)
+// console.log(a)
 
+// Callback function
 
+// const myFunc = (callBackFunc) =>{
+//     let value = 50;
+//     callBackFunc(value)
+// };
 
+// myFunc(value => {
 
+//     console.log(value)
+// })
 
+const ul = document.querySelector('.humans');
 
+let humans = ['Yusuf', 'Aisha', 'Ammar', 'AY', 'Azoro'];
 
+// const logHuman = (human, index) => {
 
+//     console.log(index, human)
+// }; 
 
+// humans.forEach(logHuman)
+
+let html = '';
+
+humans.forEach(human => {
+    html += `<li style="color: purple"> ${human} </li>`
+})
+
+ul.innerHTML = html;
 
 
 
