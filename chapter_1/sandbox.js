@@ -84,9 +84,9 @@
 //     console.log(value)
 // })
 
-const ul = document.querySelector('.humans');
+// const ul = document.querySelector('.humans');
 
-let humans = ['Yusuf', 'Aisha', 'Ammar', 'AY', 'Azoro'];
+// let humans = ['Yusuf', 'Aisha', 'Ammar', 'AY', 'Azoro'];
 
 // const logHuman = (human, index) => {
 
@@ -95,13 +95,50 @@ let humans = ['Yusuf', 'Aisha', 'Ammar', 'AY', 'Azoro'];
 
 // humans.forEach(logHuman)
 
-let html = '';
+// let html = '';
 
-humans.forEach(human => {
-    html += `<li style="color: purple"> ${human} </li>`
-})
+// humans.forEach(human => {
+//     html += `<li style="color: purple"> ${human} </li>`
+// })
 
-ul.innerHTML = html;
+// ul.innerHTML = html;
+
+// Object Literals
+
+let user = {
+    name: "Yusuf",
+    username: "yuhyam",
+    surname: "Habu",
+    blogs: ['How to Javascript', 'I like Coffee'],
+    login(){
+        console.log(`${this.username} successfully logged in`)
+    },
+    logBlogs(){
+        console.log(`${this.name} has written these blogs:`)
+        this.blogs.forEach(
+            blog => {
+                console.log(blog)
+            }
+        )
+    }
+}
+
+
+console.log(user.login())
+console.log(user.logBlogs())
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
