@@ -136,15 +136,20 @@ button.addEventListener('click', () => {
     ul.prepend(li)
 })
 
-const items = document.querySelectorAll('li');
+// const items = document.querySelectorAll('li');
 
-items.forEach( item => {
-    item.addEventListener('click', e =>{
-        e.target.style.textDecoration = 'line-through';
+// items.forEach( item => {
+//     item.addEventListener('click', e =>{
+//         e.target.style.textDecoration = 'line-through';
+//         e.target.remove();
+//     })
+// })
+
+ul.addEventListener('click', e => {
+    if (e.target.tagName === 'LI') {
         e.target.remove();
-    })
+    }
 })
-
 
 
 
