@@ -105,27 +105,58 @@
 
 // Object Literals
 
-let user = {
-    name: "Yusuf",
-    username: "yuhyam",
-    surname: "Habu",
-    blogs: ['How to Javascript', 'I like Coffee'],
-    login(){
-        console.log(`${this.username} successfully logged in`)
-    },
-    logBlogs(){
-        console.log(`${this.name} has written these blogs:`)
-        this.blogs.forEach(
-            blog => {
-                console.log(blog)
-            }
-        )
-    }
-}
+// let user = {
+//     name: "Yusuf",
+//     username: "yuhyam",
+//     surname: "Habu",
+//     blogs: ['How to Javascript', 'I like Coffee'],
+//     login(){
+//         console.log(`${this.username} successfully logged in`)
+//     },
+//     logBlogs(){
+//         console.log(`${this.name} has written these blogs:`)
+//         this.blogs.forEach(
+//             blog => {
+//                 console.log(blog)
+//             }
+//         )
+//     }
+// }
 
 
-console.log(user.login())
-console.log(user.logBlogs())
+// console.log(user.login())
+// console.log(user.logBlogs())
+
+// const button = document.querySelector('button');
+
+// button.addEventListener('click', () => {
+//     console.log('you clicked me')
+// })
+
+const items = document.querySelectorAll('li');
+
+items.forEach( item => {
+    item.addEventListener('click', e =>{
+        e.target.style.textDecoration = 'line-through';
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
