@@ -127,33 +127,50 @@
 // console.log(user.login())
 // console.log(user.logBlogs())
 
-const ul = document.querySelector('ul');
-const button = document.querySelector('button');
+// const ul = document.querySelector('ul');
+// const button = document.querySelector('button');
 
-button.addEventListener('click', () => {
-    const li = document.createElement('li');
-    li.textContent = 'Something new to do';
-    ul.prepend(li)
-})
-
-// const items = document.querySelectorAll('li');
-
-// items.forEach( item => {
-//     item.addEventListener('click', e =>{
-//         e.target.style.textDecoration = 'line-through';
-//         e.target.remove();
-//     })
+// button.addEventListener('click', () => {
+//     const li = document.createElement('li');
+//     li.textContent = 'Something new to do';
+//     ul.prepend(li)
 // })
 
-ul.addEventListener('click', e => {
-    if (e.target.tagName === 'LI') {
-        e.target.remove();
-    }
-})
+// // const items = document.querySelectorAll('li');
+
+// // items.forEach( item => {
+// //     item.addEventListener('click', e =>{
+// //         e.target.style.textDecoration = 'line-through';
+// //         e.target.remove();
+// //     })
+// // })
+
+// ul.addEventListener('click', e => {
+//     if (e.target.tagName === 'LI') {
+//         e.target.remove();
+//     }
+// })
 
 
+//Pop-up Builder
 
+const button = document.querySelector('button');
+const popup = document.querySelector('.popup-wrapper');
+const close = document.querySelector('.popup-close');
 
+button.addEventListener('click', () => {
+  popup.style.display = 'block';
+});
+
+close.addEventListener('click', () => {
+  popup.style.display = 'none';
+});
+
+popup.addEventListener('click', (e) => {
+  if(e.target.className === 'popup-wrapper'){
+    popup.style.display = 'none';
+  }
+});
 
 
 
